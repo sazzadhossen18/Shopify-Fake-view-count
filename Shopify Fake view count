@@ -1,0 +1,31 @@
+<div class="main-gurentee-text">
+  <img src="https://cdn.shopify.com/s/files/1/0656/0992/4856/files/eyeslittle2.svg?v=1663074357" alt="Bekijkers">
+  <span class="getviditors"> </span>&nbsp;Bezoekers bekijken nu dit product!
+</div>
+<style>
+  .main-gurentee-text {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: -15px;
+  }
+
+  .main-gurentee-text img {
+      width: 15px;
+      margin-right: 5px;
+      display: block;
+      margin-top: -5px;
+  }
+</style>
+<script>
+  function generateRandomNumber() {
+      var randomNumber = Math.floor(Math.random() * (50 - 20 + 1)) + 20;
+      console.log(randomNumber);
+      document.querySelector('.getviditors').innerHTML = randomNumber;
+      setTimeout(generateRandomNumber, 1500);
+  }
+
+  // Call the function to start generating random numbers
+  generateRandomNumber();
+</script>
